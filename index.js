@@ -4,7 +4,7 @@ const Discord = require("discord.js");
 const fs = require("fs");
 const readline = require("readline");
 const bot = new Discord.Client();
-bot.login("NDQ4MjczNTQyODc0NjYwODk1.DeTu1Q.LC3ZXm4tFxSucxAQppahBgtGggE");
+bot.login("process.env.BOT_TOKEN");
 
 var prefix = '//' 
 bot.on('message', (message) => {
