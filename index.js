@@ -62,7 +62,7 @@ bot.on("message", (message) => {
         }
     });
     if(message.content == prefix + 'ServerInfo'){
-        message.channel.sendMessage('**Server Name**: Complex Servers\n' + "**Server Members (Including bots.)**: " + message.guild.memberCount + "\n**Bot Count **" + botCount +   '          **Server Roles**(That you can apply for):**```\n\n[~] Manager                          {1}\n\n~Administration Team~                {0}\n\n~Junior Administration Team~         {0}\n\n[~] Overseer                         {1}\n\n[~] Board of Directors               {1}\n\n~Development team~                   {3}\n\n~Junior Development team~            {2}\n\n~Moderation Team~                    {0}\n\n~Junior Moderation Team~             {0}```**\n\n5\n **Server was made and is owned by InsaneSkillz27#9234**')
+        message.channel.sendMessage('**Server Name**: Complex Servers\n' + "**Server Members (Including bots.)**: " + message.guild.memberCount + "\n**Bot Count **" + botCount +   '          **Server Roles**(That you can apply for):**```\n\n[~] Manager                          {1}\n\n~Administration Team~                {0}\n\n~Junior Administration Team~         {0}\n\n[~] Overseer                         {1}\n\n[~] Board of Directors               {1}\n\n~Development team~                   {3}\n\n~Junior Development team~            {2}\n\n~Moderation Team~                    {0}\n\n~Junior Moderation Team~             {0}```**\n\n\n **Server was made and is owned by InsaneSkillz27#9234**')
     }
 });
 // When the person types prefix (//) then ServerInfo then they will open up the server info, I am still working on how to display the member count
