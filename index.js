@@ -85,4 +85,4 @@ class eightballCommand extends commando.Command {
         message.reply(answer.toString)
     }
 }
-module.exports = eightballCommand
+module.exports = eightballCommand;
