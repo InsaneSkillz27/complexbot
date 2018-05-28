@@ -67,3 +67,22 @@ bot.on("message", (message) => {
 });
 // When the person types prefix (//) then ServerInfo then they will open up the server info, I am still working on how to display the member count
 
+class eightballCommand extends commando.Command {
+    constructor(client) {
+        super(client, {
+            name: '8Ball',
+            group: '8Ball',
+            memberName: '8ball',
+            description: 'mystery' 
+        });
+    }
+
+    async run(message, args) {
+        var answers = [
+            'yes', 'no'
+        ];
+        var answer = answers[Math.floor(Math.random() * 2)];
+        message.reply(answer.toString)
+    }
+}
+module.exports = eightballCommand
