@@ -70,7 +70,7 @@ bot.on("message", (message) => {
 class eightballCommand extends commando.Command {
     constructor(client) {
         super(client, {
-            name: '8Ball',
+            prefix: '8Ball',
             group: '8Ball',
             memberName: '8ball',
             description: 'mystery' 
