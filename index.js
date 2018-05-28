@@ -21,7 +21,7 @@ bot.on('message', (message) => {
    // When they say something in the Badwords.txt file they get kicked
 
     if(message.content == prefix + 'Servers') {
-        message.channel.sendMessage('```These are servers of my friends, and servers that have partnerd with us (Contact my DMs to get your server on this list)\n\n       Join our sencondary server Complex Gaming: https://discord.gg/hcYCgSF \n\n      This our partner server Derpee Systems (This is a serious server): https://discord.gg/hcYCgSF\n\n       This is a coding server managed by DankDimer: https://discord.gg/bUVYSFJ\n\n        This is another partner server mangaged by 0slik_rick0: https://discord.gg/NNeFe2z```')
+        message.channel.sendMessage('```These are servers of my friends, and servers that have partnered with us (Contact my DMs to get your server on this list)\n\n       Join our sencondary server Complex Gaming: https://discord.gg/hcYCgSF \n\n      This our partner server Derpee Systems (This is a serious server): https://discord.gg/hcYCgSF\n\n       This is a coding server managed by DankDimer: https://discord.gg/bUVYSFJ\n\n        This is another partner server mangaged by 0slik_rick0: https://discord.gg/NNeFe2z```')
     } else if (message.content.startsWith(prefix +'kick')) {
         if (message.mentions.users.size === 0 ) {
             message.reply("U MUST MENTION USER");
@@ -39,7 +39,7 @@ bot.on('message', (message) => {
 
 bot.on('message', (message) => {
 if(message.content == prefix + 'Help') {
-   message.channel.sendMessage('**```our prefix is // \n\nour commands are as follows:\n\nServers (Gives links to servers, such as my friends or partners servers) \n\nKick (Will kick the person when you type kick then an @mention)(For staff use only)\n\nBotInfo: Will give you a basic overview of the Bot(Complex)\n\nServerInfo (Will gave you a basic overview of teh server, including members and roles)\n\nApplications (Will provide you a link to the applications for Complex Servers)\n\nBot is still in dev, commands will still be added)```**')
+   message.channel.sendMessage('**```our prefix is // \n\nour commands are as follows:\n\nServers (Gives links to servers, such as my friends or partners servers) \n\nKick (Will kick the person when you type kick then an @mention)(For staff use only)\n\nBotInfo: Will give you a basic overview of the Bot(Complex)\n\nServerInfo (Will gave you a basic overview of the server, including members and roles)\n\nApplications (Will provide you a link to the applications for Complex Servers)\n\nBot is still in dev, commands will still be added)```**')
  
 };
 });
