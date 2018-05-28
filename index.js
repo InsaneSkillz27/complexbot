@@ -1,12 +1,12 @@
 
-const commando = require("discord.js-commando");
+const commando = require("discord.js-commando")
 const Discord = require("discord.js");
 const fs = require("fs");
 const readline = require("readline");
 const bot = new Discord.Client();
 bot.login(process.env.BOT_TOKEN);
 
-var prefix = '//' 
+var prefix = '/' 
 bot.on('message', (message) => {
     const rl = readline.createInterface({
         input: fs.createReadStream('badwords.txt')
@@ -21,7 +21,7 @@ bot.on('message', (message) => {
    // When they say something in the Badwords.txt file they get kicked
 
     if(message.content == prefix + 'Servers') {
-        message.channel.sendMessage('```These are servers of my friends, and servers that have partnered with us (Contact my DMs to get your server on this list)\n\n       Join our sencondary server Complex Gaming: https://discord.gg/hcYCgSF \n\n      This our partner server Derpee Systems (This is a serious server): https://discord.gg/hcYCgSF\n\n       This is a coding server managed by DankDimer: https://discord.gg/bUVYSFJ\n\n        This is another partner server mangaged by 0slik_rick0: https://discord.gg/NNeFe2z```')
+        message.channel.sendMessage('```These are servers of my friends, and servers that have partenerd with us (Contact my DMs to get your server on this list)\n\n       Join our sencondary server Complex Gaming: https://discord.gg/hcYCgSF \n\n      This our partner server Derpee Systems (This is a serious server): https://discord.gg/hcYCgSF\n\n       This is a coding server managed by DankDimer: https://discord.gg/bUVYSFJ\n\n        This is another partner server mangaged by 0slik_rick0: https://discord.gg/NNeFe2z```')
     } else if (message.content.startsWith(prefix +'kick')) {
         if (message.mentions.users.size === 0 ) {
             message.reply("U MUST MENTION USER");
@@ -52,7 +52,7 @@ bot.on('message', (message) => {
     }
 });
 
-
+// This is a test to see if GitHub actually works.
 
 var botCount = 0
 bot.on("message", (message) => {
@@ -62,7 +62,7 @@ bot.on("message", (message) => {
         }
     });
     if(message.content == prefix + 'ServerInfo'){
-        message.channel.sendMessage('**Server Name**: Complex Servers\n' + "**Server Members (Including bots)**: " + message.guild.memberCount + "\n**Bot Count **" + botCount +   '          **Server Roles**(That you can apply for):**```\n\n[~] Manager                          {1}\n\n~Administration Team~                {0}\n\n~Junior Administration Team~         {0}\n\n[~] Overseer                         {1}\n\n[~] Board of Directors               {1}\n\n~Development team~                   {3}\n\n~Junior Development team~            {2}\n\n~Moderation Team~                    {0}\n\n~Junior Moderation Team~             {0}```**\n\n\n **Server was made and is owned by InsaneSkillz27#9234**')
+        message.channel.sendMessage('**Server Name**: Complex Servers\n' + "**Server Members (Including bots.)**: " + message.guild.memberCount + "\n**Bot Count **" + botCount +   '          **Server Roles**(That you can apply for):**```\n\n[~] Manager                          {1}\n\n~Administration Team~                {0}\n\n~Junior Administration Team~         {0}\n\n[~] Overseer                         {1}\n\n[~] Board of Directors               {1}\n\n~Development team~                   {3}\n\n~Junior Development team~            {2}\n\n~Moderation Team~                    {0}\n\n~Junior Moderation Team~             {0}```**\n\n5\n **Server was made and is owned by InsaneSkillz27#9234**')
     }
 });
 // When the person types prefix (//) then ServerInfo then they will open up the server info, I am still working on how to display the member count
