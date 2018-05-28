@@ -6,7 +6,7 @@ const readline = require("readline");
 const bot = new Discord.Client();
 bot.login(process.env.BOT_TOKEN);
 
-var prefix = '/' 
+var prefix = '//' 
 bot.on('message', (message) => {
     const rl = readline.createInterface({
         input: fs.createReadStream('badwords.txt')
