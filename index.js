@@ -1,5 +1,5 @@
 
-
+const commando = require("discord.js-commando");
 const Discord = require("discord.js");
 const fs = require("fs");
 const readline = require("readline");
